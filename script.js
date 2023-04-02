@@ -16,5 +16,5 @@ function init(){
         textOutput.textContent = inputText;
     }); 
     
-    window.addEventListener('load', init);
 }
+window.addEventListener('load', init);
