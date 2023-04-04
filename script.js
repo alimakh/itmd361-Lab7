@@ -1,17 +1,13 @@
-function init() {
-    var entryInput = document.getElementById("entryinput");
-    var entryButton = document.getElementById("entrybutton");
-    var textOutput = document.getElementById("textoutput");
+function init(){
+    var button = document.getElementById('entrybutton');
   
-    function showText() {
-      var inputText = entryInput.value;
-      alert("Ali Makhlouf: " + inputText);
-      textOutput.textContent = inputText;
+    function showMeText(){
+      var textbox = document.getElementById('entryinput');
+      document.getElementById('textoutput').innerHTML = textbox.value;
+      alert("Ali Makhlouf: " + textbox.value);
     }
   
-    entryButton.addEventListener("click", showText);
-  }
-  
-  window.addEventListener("load", init);
-  
-  
+    button.addEventListener('click', showMeText);
+    }
+    
+  window.addEventListener('load', init);
