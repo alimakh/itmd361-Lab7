@@ -5,7 +5,7 @@ function init() {
   
     function showText() {
       var inputText = entryInput.value;
-      alert("Your Name: " + inputText);
+      alert("Ali Makhlouf: " + inputText);
       textOutput.textContent = inputText;
     }
   
